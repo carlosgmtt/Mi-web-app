@@ -1,5 +1,62 @@
-Hola mundo =D
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido | Armonía</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F9F7F2; /* Crema suave */
+        }
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen text-slate-700">
 
-<!--
-HTML  es Hyper Text Markup Lenguaje
--->
+    <main class="max-w-2xl px-8 text-center animate-fade-in">
+        <div class="mb-8 flex justify-center">
+            <div class="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center">
+                <div class="w-6 h-6 rounded-full bg-emerald-200 opacity-60"></div>
+            </div>
+        </div>
+
+        <h1 class="serif text-5xl md:text-6xl font-light mb-6 text-emerald-900 italic">
+            Respira.
+        </h1>
+
+        <p class="text-lg md:text-xl text-slate-500 font-light leading-relaxed mb-10">
+            Has llegado a un espacio diseñado para la calma. <br>
+            Tómate un momento para estar presente y explorar con serenidad.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#" class="px-8 py-3 bg-emerald-800 text-white rounded-full hover:bg-emerald-900 transition-all duration-300 shadow-sm">
+                Comenzar
+            </a>
+            <a href="#" class="px-8 py-3 border border-emerald-800/20 text-emerald-800 rounded-full hover:bg-emerald-50 transition-all duration-300">
+                Saber más
+            </a>
+        </div>
+
+        <footer class="mt-20 opacity-40 text-sm tracking-widest uppercase">
+            Estás aquí • 2026
+        </footer>
+    </main>
+
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 1.5s ease-out;
+        }
+    </style>
+
+</body>
+</html>
